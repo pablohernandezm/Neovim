@@ -112,6 +112,7 @@
               neovim-unwrapped = inputs.neovim-nightly-overlay.packages.${pkgs.system}.neovim;
             };
             categories = {
+              lsp = true;
               completion = true;
               layout = true;
               style = true;
