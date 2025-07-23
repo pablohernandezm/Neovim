@@ -56,6 +56,7 @@
             ];
 
             utilities = with pkgs; [
+              deno
               ripgrep
               tree-sitter
               fd
