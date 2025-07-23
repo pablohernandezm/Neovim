@@ -61,6 +61,7 @@ vim.lsp.enable("tinymist")
 vim.lsp.enable("taplo")
 vim.lsp.enable("jsonls")
 vim.lsp.enable("cssls")
+vim.lsp.enable("qmlls")
 
 vim.diagnostic.config({
 	update_in_insert = true,

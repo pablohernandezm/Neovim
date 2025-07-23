@@ -58,6 +58,7 @@
             utilities = with pkgs; [
               deno
               ripgrep
+              kdePackages.qtdeclarative
               tree-sitter
               fd
             ];
