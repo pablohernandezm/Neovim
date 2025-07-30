@@ -62,6 +62,7 @@ vim.lsp.enable("taplo")
 vim.lsp.enable("jsonls")
 vim.lsp.enable("cssls")
 vim.lsp.enable("qmlls")
+vim.lsp.enable("slint_lsp")
 
 vim.diagnostic.config({
 	update_in_insert = true,

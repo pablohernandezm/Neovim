@@ -45,6 +45,7 @@
               taplo
               tinymist
               postgres-lsp
+              slint-lsp
             ];
 
             style = with pkgs; [
