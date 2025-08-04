@@ -66,9 +66,8 @@ vim.lsp.enable("slint-lsp")
 
 vim.diagnostic.config({
 	update_in_insert = true,
-	virtual_text = {
-		prefix = "",
-	},
+	underline = true,
+	virtual_lines = true,
 	signs = {
 		text = {
 			[vim.diagnostic.severity.ERROR] = "󰞏",
