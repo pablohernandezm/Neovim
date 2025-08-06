@@ -54,15 +54,20 @@ UNDODIR = vim.env.HOME .. "/.cache/nvim/undodir/"
 vim.opt.undodir = UNDODIR
 
 -- LSP
+vim.lsp.enable("cssls")
+vim.lsp.enable("hyprls")
+vim.lsp.enable("jsonls")
 vim.lsp.enable("luals")
 vim.lsp.enable("nixd")
-vim.lsp.enable("rust-analyzer")
-vim.lsp.enable("tinymist")
-vim.lsp.enable("taplo")
-vim.lsp.enable("jsonls")
-vim.lsp.enable("cssls")
+vim.lsp.enable("postgresql")
 vim.lsp.enable("qmlls")
+vim.lsp.enable("rust-analyzer")
 vim.lsp.enable("slint-lsp")
+vim.lsp.enable("svelte")
+vim.lsp.enable("tailwindcss")
+vim.lsp.enable("taplo")
+vim.lsp.enable("tinymist")
+vim.lsp.enable("typescript-ls")
 
 vim.diagnostic.config({
 	update_in_insert = true,
