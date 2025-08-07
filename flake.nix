@@ -111,6 +111,14 @@
               #############
               vim-fugitive
               nvim-surround
+              (nvim-treesitter.withPlugins (
+                plugins: with plugins; [
+                  nix
+                  lua
+                  rust
+                ]
+              ))
+              nvim-treesitter-textobjects
             ];
           };
         };

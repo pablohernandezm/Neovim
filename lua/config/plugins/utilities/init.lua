@@ -1,5 +1,6 @@
 require("lze").load({
 	{ import = "config.plugins.utilities.telescope" },
+	{ import = "config.plugins.utilities.treesitter" },
 
 	{
 		"nvim-surround",

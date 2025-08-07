@@ -42,4 +42,6 @@ require("nixCatsUtils.catPacker").setup({
 	{ "mfussenegger/nvim-dap" },
 	{ "rcarriga/nvim-dap-ui" },
 	{ "theHamsta/nvim-dap-virtual-text" },
+	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate", opt = true },
+	{ "nvim-treesitter/nvim-treesitter-textobjects", opt = true },
 })
