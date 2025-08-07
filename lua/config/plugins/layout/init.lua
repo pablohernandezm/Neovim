@@ -67,11 +67,11 @@ if nixCats("layout") then
 		},
 	})
 
-	vim.keymap.set("n", "<leader>e", function()
+	vim.keymap.set("n", "<leader>E", function()
 		vim.cmd((vim.bo.filetype == "oil") and "bd" or "Oil")
 	end, { desc = "Toggle explorer" })
 
-	vim.keymap.set("n", "<leader>E", function()
+	vim.keymap.set("n", "<leader>e", function()
 		require("oil").toggle_float()
 	end, { desc = "Toggle explorer" })
 end
