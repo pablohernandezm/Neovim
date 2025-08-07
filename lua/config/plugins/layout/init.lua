@@ -11,11 +11,11 @@ if nixCats("layout") then
 
 	vim.keymap.set("n", "<leader>bh", function()
 		vim.cmd("BufferLineMovePrev")
-	end, { desc = "Mover hacia atras" })
+	end, { desc = "Left buffer" })
 
 	vim.keymap.set("n", "<leader>bl", function()
 		vim.cmd("BufferLineMoveNext")
-	end, { desc = "Mover haca adelante" })
+	end, { desc = "Right buffer" })
 
 	vim.keymap.set("n", "<leader>b1", function()
 		require("bufferline").move_to(1)
@@ -32,6 +32,30 @@ if nixCats("layout") then
 	vim.keymap.set("n", "<leader>bsd", function()
 		vim.cmd("BufferLineSortByDirectory")
 	end, { desc = "Sort buffers by directory" })
+
+	vim.keymap.set("n", "<leader>bo", function()
+		vim.cmd("BufferLineCloseOthers")
+	end, { desc = "Close other buffers" })
+
+	vim.keymap.set("n", "<leader>bd", function()
+		vim.cmd("bd")
+	end, { desc = "Delete buffer" })
+
+	vim.keymap.set("n", "<leader>bp", function()
+		vim.cmd("BufferLineTogglePin")
+	end, { desc = "Toggle pin buffer" })
+
+	vim.keymap.set("n", "<leader>bP", function()
+		vim.cmd("BufferLineGroupClose ungrouped")
+	end, { desc = "Delete non-pinned buffers" })
+
+	vim.keymap.set("n", "<leader>bH", function()
+		vim.cmd("BufferLineCloseLeft")
+	end, { desc = "Delete buffers to the left" })
+
+	vim.keymap.set("n", "<leader>bL", function()
+		vim.cmd("BufferLineCloseRight")
+	end, { desc = "Delete buffers to the right" })
 
 	-----------------------
 	require("oil").setup({
@@ -80,11 +104,6 @@ require("lze").load({
 				{ "<leader>W", "<cmd>w!<cr>", desc = "Save file forced", mode = "n", icon = "" },
 				{ "<leader>q", "<cmd>q<cr>", desc = "Quit", mode = "n" },
 				{ "<leader>Q", "<cmd>q!<cr>", desc = "Force quit", mode = "n" },
-
-				-- Buffer key maps
-				{ "<leader>bc", "<cmd>bd<cr>", desc = "Close buffer", mode = "n" },
-				{ "<leader>bn", "<cmd>bnext<cr>", desc = "Next buffer", mode = "n" },
-				{ "<leader>bp", "<cmd>bprev<cr>", desc = "Previous buffer", mode = "n" },
 			})
 		end,
 	},
