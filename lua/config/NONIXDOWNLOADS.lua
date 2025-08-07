@@ -40,4 +40,6 @@ require("nixCatsUtils.catPacker").setup({
 	{ "kylechui/nvim-surround", opt = true },
 	{ "mrcjkb/rustaceanvim" },
 	{ "mfussenegger/nvim-dap" },
+	{ "rcarriga/nvim-dap-ui" },
+	{ "theHamsta/nvim-dap-virtual-text" },
 })
