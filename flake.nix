@@ -33,6 +33,10 @@
         }:
         {
           lspsAndRuntimeDeps = {
+            debug = with pkgs; [
+              vscode-extensions.vadimcn.vscode-lldb.adapter
+            ];
+
             lsp = with pkgs; [
               lua-language-server
               nixd
@@ -62,6 +66,7 @@
               kdePackages.qtdeclarative
               tree-sitter
               fd
+              gcc
             ];
           };
 
@@ -71,6 +76,11 @@
               blink-cmp
               friendly-snippets
               #############
+            ];
+
+            debug = with pkgs.vimPlugins; [
+              nvim-dap
+              rustaceanvim
             ];
 
             layout = with pkgs.vimPlugins; [
@@ -117,6 +127,7 @@
             categories = {
               lsp = true;
               completion = true;
+              debug = true;
               layout = true;
               style = true;
               utilities = true;

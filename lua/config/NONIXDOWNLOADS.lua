@@ -22,6 +22,7 @@ require("nixCatsUtils.catPacker").setup({
 	--[[ we dont have to write it twice.            ]]
 	--[[ ------------------------------------------ ]]
 	{ "BirdeeHub/lze" },
+	{ "williamboman/mason.nvim", opt = true },
 
 	{ "nvim-tree/nvim-web-devicons" },
 	{ "folke/which-key.nvim", opt = true },
@@ -37,16 +38,6 @@ require("nixCatsUtils.catPacker").setup({
 	{ "nvim-lua/plenary.nvim" },
 	{ "tpope/vim-fugitive", opt = true },
 	{ "kylechui/nvim-surround", opt = true },
-
-	--  NOTE:  we take care of lazy loading elsewhere in an autocommand
-	-- so that we can use the same code on and off nix.
-	-- so here we just tell it not to auto load it
-
-	-- all the rest of the setup will be done using the normal setup functions later,
-	-- thus working regardless of what method loads the plugins.
-	-- only stuff pertaining to downloading should be added to paq.
-
-	-- NO NIX
-	{ "williamboman/mason.nvim", opt = true },
+	{ "mrcjkb/rustaceanvim" },
+	{ "mfussenegger/nvim-dap" },
 })
--- OK, again, that isnt needed if you load this setup via nix, but it is an option.

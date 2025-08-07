@@ -61,13 +61,14 @@ vim.lsp.enable("luals")
 vim.lsp.enable("nixd")
 vim.lsp.enable("postgresql")
 vim.lsp.enable("qmlls")
-vim.lsp.enable("rust-analyzer")
 vim.lsp.enable("slint-lsp")
 vim.lsp.enable("svelte")
 vim.lsp.enable("tailwindcss")
 vim.lsp.enable("taplo")
 vim.lsp.enable("tinymist")
 vim.lsp.enable("typescript-ls")
+
+-- vim.lsp.enable("rust-analyzer") -- rustaceanvim configures rust-analyzer
 
 vim.diagnostic.config({
 	update_in_insert = true,
