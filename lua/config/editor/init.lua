@@ -66,7 +66,7 @@ vim.lsp.enable("svelte")
 vim.lsp.enable("tailwindcss")
 vim.lsp.enable("taplo")
 vim.lsp.enable("tinymist")
-vim.lsp.enable("typescript-ls")
+vim.lsp.enable("tsls")
 
 -- vim.lsp.enable("rust-analyzer") -- rustaceanvim configures rust-analyzer
 
