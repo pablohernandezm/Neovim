@@ -5,7 +5,7 @@ if nixCats("style") then
 			nix = { "nixfmt" },
 			lua = { "stylua" },
 			rs = { "rustfmt" },
-			sql = { "pg_format", "deno_fmt" },
+			sql = { "pg_format" },
 			astro = { "deno_fmt" },
 			html = { "deno_fmt" },
 			ipynb = { "deno_fmt" },
