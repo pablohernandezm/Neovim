@@ -34,4 +34,14 @@ require("lze").load({
 			require("mason").setup()
 		end,
 	},
+
+	{
+		"nvim-autopairs",
+		for_cat = "utilities",
+		event = "InsertEnter",
+
+		after = function(_)
+			require("nvim-autopairs").setup()
+		end,
+	},
 })

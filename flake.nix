@@ -48,7 +48,6 @@
               hyprls
               taplo
               tinymist
-              postgres-lsp
               slint-lsp
             ];
 
@@ -76,6 +75,9 @@
               blink-cmp
               friendly-snippets
               #############
+              vim-dadbod
+              vim-dadbod-completion
+              vim-dadbod-ui
             ];
 
             debug = with pkgs.vimPlugins; [

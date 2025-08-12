@@ -9,7 +9,6 @@ if not require("nixCatsUtils").isNixCats then
 			"hyprls",
 			"json-lsp",
 			"lua-language-server",
-			"postgrestools",
 			"qmlls",
 			"slint-lsp",
 			"svelte-language-server",

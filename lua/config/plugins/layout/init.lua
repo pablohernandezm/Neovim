@@ -101,7 +101,6 @@ require("lze").load({
 
 				-- General
 				{ "<leader>w", "<cmd>w<cr>", desc = "Save file", mode = "n", icon = "" },
-				{ "<leader>W", "<cmd>w!<cr>", desc = "Save file forced", mode = "n", icon = "" },
 				{ "<leader>q", "<cmd>q<cr>", desc = "Quit", mode = "n" },
 				{ "<leader>Q", "<cmd>q!<cr>", desc = "Force quit", mode = "n" },
 			})
