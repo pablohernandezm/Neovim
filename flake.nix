@@ -115,6 +115,16 @@
               nvim-surround
               nvim-treesitter.withAllGrammars
               nvim-treesitter-textobjects
+              typst-preview-nvim
+              (pkgs.vimUtils.buildVimPlugin {
+                name = "typst-concealer";
+                src = pkgs.fetchFromGitHub {
+                  owner = "PartyWumpus";
+                  repo = "typst-concealer";
+                  rev = "3d2e72ce7fc06bd0db0dafbdd1e17d3c9e343d53";
+                  hash = "sha256-0KaNmiQDTJpqC5cB6+m1akLK9kkpWavNZ+/zMOHAQ5o=";
+                };
+              })
             ];
           };
         };

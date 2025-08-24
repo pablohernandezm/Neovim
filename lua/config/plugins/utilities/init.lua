@@ -30,7 +30,7 @@ require("lze").load({
 		-- only run it when not on nix
 		enabled = not require("nixCatsUtils").isNixCats,
 		on_plugin = { "nvim-lspconfig" },
-		load = function(name)
+		load = function(_)
 			require("mason").setup()
 		end,
 	},
@@ -42,6 +42,22 @@ require("lze").load({
 
 		after = function(_)
 			require("nvim-autopairs").setup()
+		end,
+	},
+
+	{
+		"PartyWumpus/typst-concealer",
+		ft = "typst",
+		after = function(_)
+			require("typst-concealer").setup({})
+		end,
+	},
+	{
+		"chomosuke/typst-preview.nvim",
+		for_cat = "utilities",
+		ft = "typst",
+		after = function(_)
+			require("typst-preview").setup({})
 		end,
 	},
 })
