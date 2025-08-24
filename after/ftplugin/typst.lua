@@ -20,19 +20,3 @@ vim.keymap.set(
 	":TypstPreviewSyncCursor<CR>",
 	{ desc = "Scroll preview to the current cursor position" }
 )
-
--- CONCEALER
-local _, concealer = pcall(require, "typst-concealer")
-vim.keymap.set("n", "<localleader>ca", function()
-	local success, err = pcall(concealer.enable_buf, vim.fn.bufnr())
-	if not success then
-		vim.notify("Error enabling typst-concealer: " .. err, vim.log.levels.ERROR)
-	end
-end, { desc = "Enable typst-concealer" })
-
-vim.keymap.set("n", "<localleader>cd", function()
-	local success, err = pcall(concealer.disable_buf, vim.fn.bufnr())
-	if not success then
-		vim.notify("Error disabling typst-concealer: " .. err, vim.log.levels.ERROR)
-	end
-end, { desc = "Disable typst-concealer" })

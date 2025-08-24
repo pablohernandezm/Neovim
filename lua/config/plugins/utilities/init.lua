@@ -44,14 +44,6 @@ require("lze").load({
 			require("nvim-autopairs").setup()
 		end,
 	},
-
-	{
-		"PartyWumpus/typst-concealer",
-		ft = "typst",
-		after = function(_)
-			require("typst-concealer").setup({})
-		end,
-	},
 	{
 		"chomosuke/typst-preview.nvim",
 		for_cat = "utilities",

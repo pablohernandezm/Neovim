@@ -47,6 +47,5 @@ require("nixCatsUtils.catPacker").setup({
 	{ "tpope/vim-dadbod", opt = true },
 	{ "kristijanhusak/vim-dadbod-completion", opt = true },
 	{ "kristijanhusak/vim-dadbod-ui", opt = true },
-	{ "PartyWumpus/typst-concealer", opt = true },
 	{ "chomosuke/typst-preview.nvim", opt = true },
 })
